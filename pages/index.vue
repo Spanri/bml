@@ -38,6 +38,7 @@ export default {
 
 .main-page {
   &__background {
+    background-color: rgb(201, 215, 228);
     background-image: url('~assets/img/background.png');
     background-attachment: fixed;
   }
@@ -51,17 +52,30 @@ export default {
   color: white;
 
   h2 {
-    text-shadow: 1px 1px 2px black;
-    animation: 1s tremor ease-in-out infinite;
+    text-shadow: 3px 3px 0px $color-additional-dark;
   }
 
   .frame1__slogan {
+    position: relative;
+    z-index: 1;
     margin: 30px 50% auto -30px;
     transform: skewX(-25deg);
-    background-color: $color-main;
+    animation: 1.2s tremor ease-in-out infinite;
 
     @media (max-width: 650px) {
       margin: 30px 40% auto -30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;  
+      opacity: .8; 
+      z-index: -1;
+      background: $color-main-gradient;
     }
 
     h5 {
@@ -70,21 +84,22 @@ export default {
       margin: 0;
       transform: skewX(25deg);
       
-
       @media (max-width: 650px) {
         padding-left: 50px;
       }
+    }
 
-      @keyframes tremor {
-        10%, 30%, 50% {
-          transform: translateX(4px);
-        }
-        20%, 40% {
-          transform: translateX(-4px);
-        }
-        60%, 100% {
-          transform: translateX(0px);
-        }
+    @keyframes tremor {
+      5%, 15%, 25% {
+        transform: translateX(4px) skewX(-25deg);
+        filter: blur(0.5px);
+      }
+      10%, 20% {
+        transform: translateX(-4px) skewX(-25deg);
+        filter: blur(1px);
+      }
+      30%, 100% {
+        transform: translateX(0px) skewX(-25deg);
       }
     }
   }
@@ -95,6 +110,10 @@ export default {
   flex-direction: column;
   min-height: calc(100vh - 44px);
   background-color: white;
+  background-image: url('~assets/img/backgroundFigure2.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 
   h2 {
     @media (max-width: 500px) {
@@ -121,7 +140,9 @@ export default {
   color: white;
 
   &__block {
-    background-color: $color-main;
+    position: relative;
+    z-index: 1;
+    // background-color: $color-main;
     margin: 10% auto;
     max-width: 800px;
 
@@ -133,6 +154,22 @@ export default {
       margin: 10% 5%;
     }
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;  
+      opacity: .9; 
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: url('~assets/img/backgroundFigure1.svg');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: cover;
+    }
+
     h2 {
       margin: 30px auto auto;
     }
@@ -140,7 +177,8 @@ export default {
     h5 {
       margin: 0 auto auto;
       max-width: 700px;
-      padding: 30px;
+      padding: 50px;
+      padding: 20px 40px 40px 50px;
     }
   }
 }
@@ -153,6 +191,7 @@ h2 {
   margin: auto auto 0;
   max-width: 600px;
   text-align: center;
+  text-shadow: 4px 4px 0px $color-additional-light;
 
   @media (max-width: 650px) {
     margin: auto 30px 30px;

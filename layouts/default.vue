@@ -67,14 +67,15 @@ html {
   }
 
   button {
+    margin-top: 10px;
     margin-bottom: 10px;
     background-color: $color-button;
     padding: 3px 10px;
     border: 0;
     box-shadow:
-      1px 1px $color-main,
-      2px 2px $color-main,
-      3px 3px $color-main;
+      1px 1px $color-additional-light,
+      2px 2px $color-additional-light,
+      3px 3px $color-additional-light;
     transform: translate(-3px, -3px);
   }
 

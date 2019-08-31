@@ -68,7 +68,11 @@ export default {
         }
       }
     },
-    extend (config, ctx) {
+    extend(config, { isDev, isClient }) {
+      if (!isDev) {
+        config.output.publicPath = "./_nuxt/";
+      }
+      return config;
     }
   }
 }

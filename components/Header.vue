@@ -107,7 +107,8 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
-  background-color: $color-main;
+  background: $color-main;
+  background: $color-main-gradient;
   font-family: head;
 }
 
@@ -118,7 +119,7 @@ a {
 }
 
 a:hover {
-  color: #114068;
+  color: $color-additional-dark;
 }
 
 </style>

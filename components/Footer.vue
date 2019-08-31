@@ -10,7 +10,8 @@ footer {
   width: 100%;
   color: white;
   justify-content: center;
-  background-color: $color-main;
+  background: $color-main;
+  background: $color-main-gradient;
   font-family: head;
 }
 
