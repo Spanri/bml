@@ -1,22 +1,7 @@
 # bml
 
-> My best Nuxt.js project
+> В ветке `old` находится старый проект (еще без фреймворков, просто верстка), я его переделала.
 
-## Build Setup
+Первоначально это была страничка для проекта моего друга Леши, она ему была не нужна, но мне хотелось что-то сверстать.
 
-``` bash
-# install dependencies
-$ npm run install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Сейчас я переделала дизайн, добавила фреймворк, другие препроцессоры, перевела всё на русский, сделала нормальный роутинг........
