@@ -1,9 +1,9 @@
 <template>
   <header ref="h">
     <nav>
-      <n-link to="/">О модели</n-link>
-      <n-link to="/instruction">Инструкция</n-link>
-      <n-link to="/contacts">Контакты</n-link>
+      <n-link to="#">О модели</n-link>
+      <n-link to="#/instruction">Инструкция</n-link>
+      <n-link to="#/contacts">Контакты</n-link>
     </nav>
   </header>
 </template>
