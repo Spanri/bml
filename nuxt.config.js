@@ -1,6 +1,7 @@
 
 export default {
   mode: 'universal',
+  router: { base: '/bml' },
   /*
   ** Headers of the page
   */
