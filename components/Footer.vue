@@ -10,7 +10,7 @@ footer {
   width: 100%;
   color: white;
   justify-content: center;
-  background-color: #5f7f9e;
+  background-color: $color-main;
   font-family: head;
 }
 

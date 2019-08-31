@@ -96,6 +96,7 @@ export default {
 // }
 
 header {
+  z-index: 2;
   position: sticky;
   top: 0;
   width: 100%;
@@ -106,7 +107,7 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
-  background-color: #5f7f9e;
+  background-color: $color-main;
   font-family: head;
 }
 

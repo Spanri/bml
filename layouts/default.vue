@@ -20,7 +20,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
 @font-face {
   font-family: 'head';
   src:
@@ -62,12 +63,30 @@ html {
 
 .default {
   min-height: 100vh;
+  background-color: $color-background;
 }
 
 .a {
   flex: 100%;
   justify-content: center;
-  width: 245px;
+  width: 100%;
+
+  h2 {
+    margin: 30px;
+  }
+
+  button {
+    margin-bottom: 10px;
+    background-color: $color-button;
+    border: solid $color-main;
+    border-width: 0 3px 3px 0;
+    padding: 3px 10px;
+  }
+
+  button:active {
+    border-color: $color-background;
+    border-width: 3px 0 0 3px;
+  }
 }
 
 </style>
