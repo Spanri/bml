@@ -1,23 +1,26 @@
 {
-  "name": "bml",
+  "name": "lesha",
   "version": "1.0.0",
-  "description": "My best Nuxt.js project",
-  "author": "Spanri",
-  "private": true,
+  "description": "bml",
+  "main": "gulpfile.js",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "start": "gulp watch",
+    "build": "gulp style",
+    "br-sync": "gulp browser-sync",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3",
-    "bootstrap-vue": "^2.0.0-rc.11",
-    "nuxt": "^2.0.0"
+    "wowjs": "^1.1.3"
   },
   "devDependencies": {
-    "@nuxtjs/style-resources": "^1.0.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.3.1"
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-haml": "^0.2.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "imagemin-pngquant": "^5.0.1"
   }
 }
