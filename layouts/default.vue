@@ -22,15 +22,6 @@ export default {
 
 <style lang="scss">
 
-@font-face {
-  font-family: 'head';
-  src:
-    url("../assets/font/head.ttf") format("ttf"),
-    url("../assets/font/head.woff") format("woff");
-  font-weight: normal;
-  font-size: 35px;
-}
-
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -78,14 +69,18 @@ html {
   button {
     margin-bottom: 10px;
     background-color: $color-button;
-    border: solid $color-main;
-    border-width: 0 3px 3px 0;
     padding: 3px 10px;
+    border: 0;
+    box-shadow:
+      1px 1px $color-main,
+      2px 2px $color-main,
+      3px 3px $color-main;
+    transform: translate(-3px, -3px);
   }
 
   button:active {
-    border-color: $color-background;
-    border-width: 3px 0 0 3px;
+    box-shadow: none;
+    transform: translate(0px, 0px);
   }
 }
 

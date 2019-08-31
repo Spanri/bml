@@ -23,8 +23,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
@@ -34,8 +33,7 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-  ],
+  buildModules: [],
   /*
   ** Nuxt.js modules
   */
@@ -44,23 +42,32 @@ export default {
     '@nuxtjs/style-resources',
   ],
   /*
-  ** Штуки для файлов scss из assets
+  ** Global SCSS
   */
   styleResources: {
     scss: [
-      'assets/scss/index.scss',
+      '~assets/scss/index.scss',
     ]
   },
   /*
   ** Build configuration
   */
   build: {
-    // vendor: [
-    //   'vue-sticky'
-    // ],
-    /*
-    ** You can extend webpack config here
-    */
+    postcss: {
+      plugins: {
+        // Disable `postcss-url`
+        // 'postcss-url': false,
+        // // Add some plugins
+        // 'postcss-nested': {},
+        // 'postcss-responsive-type': {},
+        // 'postcss-hexrgba': {}
+      },
+      preset: {
+        autoprefixer: {
+          grid: true
+        }
+      }
+    },
     extend (config, ctx) {
     }
   }

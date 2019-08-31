@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'head';
+  src:
+    url("~assets/font/head.ttf") format("ttf"),
+    url("~assets/font/head.woff") format("woff");
+  font-weight: normal;
+  font-size: 35px;
+}
+
 $color-main: #5f7f9e;
 $color-background: white;
 $color-background-frame: rgb(236, 213, 203);
