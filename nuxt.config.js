@@ -1,7 +1,7 @@
 
 export default {
   mode: 'universal',
-  router: { base: '/bml' },
+  router: { base: '/bml/' },
   /*
   ** Headers of the page
   */
@@ -53,14 +53,10 @@ export default {
   ** Build configuration
   */
   build: {
+    // publicPath: '_nuxt/',
     postcss: {
       plugins: {
-        // Disable `postcss-url`
-        // 'postcss-url': false,
-        // // Add some plugins
-        // 'postcss-nested': {},
-        // 'postcss-responsive-type': {},
-        // 'postcss-hexrgba': {}
+
       },
       preset: {
         autoprefixer: {
@@ -68,11 +64,10 @@ export default {
         }
       }
     },
-    extend(config, { isDev, isClient }) {
-      if (!isDev) {
-        config.output.publicPath = "./_nuxt/";
+    extend(config, ctx) {
+      if (!ctx.isDev) {
+        config.output.publicPath = "/bml/_nuxt/";
       }
-      return config;
     }
   }
 }

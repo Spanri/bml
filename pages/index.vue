@@ -39,7 +39,7 @@ export default {
 .main-page {
   &__background {
     background-color: rgb(201, 215, 228);
-    background-image: url('~assets/img/background.png');
+    background-image: url('~static/img/background.png');
     background-attachment: fixed;
   }
 }
@@ -110,7 +110,7 @@ export default {
   flex-direction: column;
   min-height: calc(100vh - 44px);
   background-color: white;
-  background-image: url('~assets/img/backgroundFigure2.svg');
+  background-image: url('~static/img/backgroundFigure2.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: cover;
@@ -164,7 +164,7 @@ export default {
       opacity: .9; 
       z-index: -1;
       background-color: rgba(0, 0, 0, 0);
-      background-image: url('~assets/img/backgroundFigure1.svg');
+      background-image: url('~static/img/backgroundFigure1.svg');
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: cover;
