@@ -53,7 +53,7 @@ export default {
   ** Build configuration
   */
   build: {
-    // publicPath: '_nuxt/',
+    publicPath: '/assets/',
     postcss: {
       plugins: {
 
@@ -65,9 +65,9 @@ export default {
       }
     },
     extend(config, ctx) {
-      if (!ctx.isDev) {
-        config.output.publicPath = "/bml/_nuxt/";
-      }
+      // if (!ctx.isDev) {
+      //   config.output.publicPath = "/assets/";
+      // }
     }
   }
 }
