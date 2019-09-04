@@ -27,10 +27,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    // '~/plugins/vue-sticky.js',
-    // { src: '~/plugins/vue-sticky.js', mode: 'client' }
-  ],
+  plugins: [],
   /*
   ** Nuxt.js dev-modules
   */
@@ -56,16 +53,14 @@ export default {
   build: {
     publicPath: '/assets/',
     postcss: {
-      plugins: {
-
-      },
+      plugins: {},
       preset: {
         autoprefixer: {
           grid: true
         }
       }
     },
-    extend(config, ctx) {
-    }
+    extend(config, { isClient }) {
+    },
   }
 }
