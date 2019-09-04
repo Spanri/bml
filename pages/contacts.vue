@@ -1,5 +1,6 @@
 <template>
   <div class="contacts">
+    <div style="margin-bottom: 80px;"></div>
     <h2>Контакты</h2>
     <p>Леша: какие-то контакты</p>
     <p>Аня: какие-то контакты</p>

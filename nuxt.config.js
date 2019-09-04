@@ -28,7 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-sticky', ssr: false }
+    // '~/plugins/vue-sticky.js',
+    // { src: '~/plugins/vue-sticky.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -65,9 +66,6 @@ export default {
       }
     },
     extend(config, ctx) {
-      // if (!ctx.isDev) {
-      //   config.output.publicPath = "/assets/";
-      // }
     }
   }
 }

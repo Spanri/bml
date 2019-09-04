@@ -39,7 +39,7 @@ export default {
 .main-page {
   &__background {
     background-color: rgb(201, 215, 228);
-    background-image: url('~static/img/background.png');
+    background-image: url('~assets/img/background.png');
     background-attachment: fixed;
   }
 }
@@ -47,7 +47,7 @@ export default {
 .frame1 {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 44px);
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0);
   color: white;
 
@@ -108,15 +108,15 @@ export default {
 .frame2 {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 44px);
+  min-height: calc(100vh - 0px);
   background-color: white;
-  background-image: url('~static/img/backgroundFigure2.svg');
+  background-image: url('~assets/img/backgroundFigure2.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: cover;
 
   @media (max-width: 650px) {
-    background-image: url('~static/img/backgroundFigure2min.svg');
+    background-image: url('~assets/img/backgroundFigure2min.svg');
   }
 
   h2 {
@@ -139,7 +139,7 @@ export default {
 .frame3 {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 88px);
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0);
   color: white;
 
@@ -168,7 +168,7 @@ export default {
       opacity: .9; 
       z-index: -1;
       background-color: rgba(0, 0, 0, 0);
-      background-image: url('~static/img/backgroundFigure3.svg');
+      background-image: url('~assets/img/backgroundFigure3.svg');
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: cover;

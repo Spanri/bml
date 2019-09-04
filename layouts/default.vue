@@ -1,6 +1,9 @@
 <template>
   <div class="container-fluid default">
-    <Header />
+    <client-only placeholder="Загрузка...">
+      <HeaderNotSsr></HeaderNotSsr>
+    </client-only>
+    <!-- <div style="margin-bottom: 44px;"></div> -->
     <div class=".container-fluid a">
       <nuxt />
     </div>
@@ -9,12 +12,12 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
+import HeaderNotSsr from '~/components/HeaderNotSsr.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
-    Header,
+    HeaderNotSsr,
     Footer
   }
 }
